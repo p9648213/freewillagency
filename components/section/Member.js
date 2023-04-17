@@ -62,28 +62,6 @@ function Member() {
             <div
               className="w-[223px] h-[265px] bg-center bg-no-repeat"
               style={{
-                backgroundImage: 'url("/assets/member-img3.webp")',
-                backgroundSize: "190%",
-                backgroundPositionY: "90%",
-                backgroundPositionX: "30%",
-              }}
-            ></div>
-            <div className="h-[81.82px] py-2 bottom-[-80px] left-0 right-0 bg-white border-b-[1px] border-gray-300 flex items-center justify-center">
-              <div className="flex flex-col justify-center items-center gap-[2px]">
-                <div className="text-[18px] text-[#018489] font-bold">
-                  Mr. Levine
-                </div>
-                <div className="w-[141px] text-[12px] text-[#F0C519] font-bold italic text-center">
-                  CTO of Freewill Agency
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div
-              className="w-[223px] h-[265px] bg-center bg-no-repeat"
-              style={{
                 backgroundImage: 'url("/assets/member-img4.webp")',
                 backgroundSize: "120%",
                 backgroundPositionY: "20%",

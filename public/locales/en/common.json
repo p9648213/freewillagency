@@ -1,0 +1,148 @@
+{
+  "header": {
+    "slogan": "CREATE VALUE - CONNECT LOVE",
+    "titles": ["About Us", "Our Services", "Contact Us"]
+  },
+  "banner": {
+    "title": "US IMMIGRATION\nEB5 PROGRAM",
+    "button": "READ MORE"
+  },
+  "about": {
+    "title": "About Us",
+    "intro": "is a full-service company that offer consulting and technology consulting services to companies around the World.",
+    "body": "We have profound leadership experience in many years working with the largest financial and technology companies as well as extensive knowledge of technology consulting, best practices consulting, data science and activities.\nOur focus is on providing high quality technology solutions related to software development and implementation, data analysis and data management, model pricing and other services.",
+    "vision": {
+      "title": "VISION",
+      "content": "To gradually elevate the Vietnamese people on the world stage. Unite together for the greater welfare of the globe."
+    },
+    "mission": {
+      "title": "MISSION",
+      "content": "Develop the greatest business relationships possible in hopes of achieving shared benefit. Arousing the inherent love within each person,each business to awaken limitless potential. Create value & connect love."
+    }
+  },
+  "service": {
+    "title": "TRAVEL VISAS SERVICE",
+    "country": "US",
+    "content": "Freewill Agency provides a full range of US Visa Services, including US Immigration EB5 Program, EB3 Program, L1 Program, and US Travel Visas."
+  },
+  "prbanner": {
+    "title": ["US TRAVEL VISAS", "10% OFF", "ONLY IN APRIL"],
+    "button": "GET OFFER"
+  },
+  "promotion": {
+    "title": "US TRAVEL VISAS SERVICE",
+    "discount": "OFFER UP TO",
+    "intro": {
+      "part-1": "The United States has always been a country that many people love and want to visit.",
+      "part-2": [
+        "And your opportunity has arrived with",
+        "10% discount",
+        "of US TRAVEL VISA service in this month."
+      ]
+    },
+    "body": {
+      "part-1": "Join with us to get a US Travel Visa easily and completely:",
+      "part-2": [
+        "✅ US Visa service whole package.",
+        "✅ High pass rate.",
+        "✅ Dedicated and professional advice.",
+        "✅ Documents prepared by a team of experienced professionals."
+      ]
+    }
+  },
+  "program-highlight": {
+    "title": "US IMMIGRATION PROGRAMS\n OUTSTANDING",
+    "program": ["EB5 PROGRAM", "EB3 PROGRAM", "L1 PROGRAM"],
+    "button": "REGISTER FOR CONSULTATION"
+  },
+  "program-banner": {
+    "title": "AUSTRALIA TRAVEL VISAS SERVICE with",
+    "body": "In addition to US Visa services, Freewill Agency specializes in Australia Travel Visa and Australian Working Visa packages, with a high pass rate, dedicated, professional advice, a reasonable cost, and document processing by experts.",
+    "slogan": "Freewill Agency accompanies you to realize your dreams.",
+    "button": "READ MORE"
+  },
+  "advise": {
+    "article-1": {
+      "title": "TECHNOLOGY BUILDING CONSULTANCY",
+      "body": [
+        "is a full-service company dedicated to providing consulting and technology consulting services to companies around the world.",
+        "We have extensive leadership experience from years of working with the world's largest financial and technology firms, as well as profound understanding of technology consulting, best practices consulting, data science, and relevant activities."
+      ]
+    },
+    "article-2": {
+      "title": "Digital Technology Platform - New Direction for Business",
+      "body": "Our principal goal is to provide high-quality technology solutions in the fields of software development and implementation, data analysis and management, model pricing, and other services."
+    }
+  },
+  "partner": {
+    "title": "Our Partners"
+  },
+  "member": {
+    "title": "OUR FREEWILL AGENCY'S MEMBERS",
+    "slogan": "CREATE VALUE - CONNECT LOVE"
+  },
+  "consultation": {
+    "title": "For more information about the\n program, please register at:",
+    "form-title": "REGISTER FOR\n CONSULTATION",
+    "placeholder": [
+      "Name (*)",
+      "Email (*)",
+      "Phone Number (*)",
+      "Our Service (*)"
+    ],
+    "options": [
+      "EB5 Program",
+      "EB3 Program",
+      "L1 Program",
+      "US Travel Visa",
+      "Australia Travel Visa",
+      "Airline Tickets"
+    ],
+    "button": "BOOK NOW!"
+  },
+  "projecthighlight": {
+    "title": [
+      "LAUNCHING OUTSTANDING",
+      "EB-5",
+      "PROJECTS",
+      "SILICON VALLEY PROJECT"
+    ],
+    "article": {
+      "title": [
+        "OPPORTUNITY TO INVEST IN EB-5:",
+        "HYATT PLACE HOTEL PROJECT",
+        "in Silicon Valley - California"
+      ],
+      "intro": [
+        "THE EB-5 PROJECT",
+        "- HYATT PLACE HOTEL, A HIGH-QUALITY PROJECT THAT ATTRACTS MANY INVESTORS FROM VIETNAM AND AROUND THE WORLD. THE",
+        "FREEWILL AGENCY",
+        "TEAM HAS EVALUATED AND MET THE FOLLOWING CRITERIA:"
+      ],
+      "body": {
+        "content-1": [
+          "Prime location in the center of San Jose,",
+          "where the world's leading technology companies such as Google, Apple, Ebay, etc. are located."
+        ],
+        "content-2": [
+          "Reputable developers",
+          "including New World Regional Center and WSC Hotel Management, and the project is expected to attract up to 15 EB-5 investors."
+        ],
+        "content-3": [
+          "Large project,",
+          "more than 200 jobs",
+          "are expected to be created from the project."
+        ]
+      },
+      "end": [
+        "With many years of experience in the field of US Immigration and Settlement Consulting,",
+        "Freewill Agency",
+        "accompanies you to realize your dream of settling with your family in the United States."
+      ]
+    },
+    "button": "FOR MORE DETAILS"
+  },
+  "projectImgs": {
+    "title": ["SOME IMAGES", "of", "Hyatt Place Hotel", "Project"]
+  }
+}

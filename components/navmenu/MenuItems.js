@@ -1,10 +1,8 @@
-import Link from "next/link";
-
 import { useState, useEffect, useRef } from "react";
 
 import Dropdown from "./Dropdown";
 
-const MenuItems = ({ items, depthLevel }) => {
+const MenuItems = ({ items, depthLevel, handleScrolling }) => {
   const [dropdown, setDropdown] = useState(false);
 
   let ref = useRef();
@@ -14,12 +12,15 @@ const MenuItems = ({ items, depthLevel }) => {
       if (dropdown && ref.current && !ref.current.contains(event.target)) {
         setDropdown(false);
       }
+      if (event.target.name && event.target.name === "listItem") {
+        setDropdown(false);
+      }
     };
 
     document.addEventListener("click", handler);
 
     return () => {
-      document.addEventListener("click", handler);
+      document.removeEventListener("click", handler);
     };
   }, [dropdown]);
 
@@ -31,10 +32,16 @@ const MenuItems = ({ items, depthLevel }) => {
       {items.submenu ? (
         <>
           <button
+            data-target={items.dataTarget ? items.dataTarget : ""}
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
-            onClick={() => setDropdown((prev) => !prev)}
+            onClick={(e) => {
+              if (items.dataTarget) {
+                handleScrolling(e);
+              }
+              setDropdown((prev) => !prev);
+            }}
           >
             <span className={items.navTitle ? "text-[21px]" : "text-[19px]"}>
               {items.title || items.navTitle}{" "}
@@ -49,15 +56,23 @@ const MenuItems = ({ items, depthLevel }) => {
             depthLevel={depthLevel}
             submenus={items.submenu}
             dropdown={dropdown}
+            handleScrolling={handleScrolling}
           />{" "}
         </>
       ) : (
-        <Link
-          href="/#"
+        <button
+          data-target={items.dataTarget ? items.dataTarget : ""}
           className={items.navTitle ? "text-[21x]" : "text-[19px]"}
+          name="listItem"
+          type="button"
+          onClick={(e) => {
+            if (items.dataTarget) {
+              handleScrolling(e);
+            }
+          }}
         >
           {items.title || items.navTitle}
-        </Link>
+        </button>
       )}{" "}
     </li>
   );

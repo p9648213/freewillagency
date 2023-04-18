@@ -54,5 +54,6 @@ export const menuItemsConfig = [
   },
   {
     navTitle: "Contact Us",
+    dataTarget: "footer",
   },
 ];

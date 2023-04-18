@@ -46,7 +46,7 @@ function Header({ handleScrolling }) {
           </div>
         </div>
 
-        <Navbar />
+        <Navbar handleScrolling={handleScrolling} />
 
         {/* <div className="flex-shrink-0 flex items-center justify-start gap-16 text-[#0E7196] text-[21px] font-[550]">
           <div className="h-full flex justify-center items-center relative z-20">

@@ -1,6 +1,9 @@
+import JsonEN from "../../public/locales/en/common.json" assert { type: "json" };
+import JsonVI from "../../public/locales/vi/common.json" assert { type: "json" };
+
 export const menuItemsConfigEN = [
   {
-    navTitle: "About Us",
+    navTitle: JsonEN.header.titles[0],
     submenu: [
       {
         title: "Picth Deck FreeWill.PDF",
@@ -14,7 +17,7 @@ export const menuItemsConfigEN = [
     ],
   },
   {
-    navTitle: "Our Services",
+    navTitle: JsonEN.header.titles[1],
     submenu: [
       {
         title: "Định cư Mỹ",
@@ -53,14 +56,14 @@ export const menuItemsConfigEN = [
     ],
   },
   {
-    navTitle: "Contact Us",
+    navTitle: JsonEN.header.titles[2],
     dataTarget: "footer",
   },
 ];
 
 export const menuItemsConfigVN = [
   {
-    navTitle: "Về chúng tôi",
+    navTitle: JsonVI.header.titles[0],
     submenu: [
       {
         title: "Picth Deck FreeWill.PDF",
@@ -74,7 +77,7 @@ export const menuItemsConfigVN = [
     ],
   },
   {
-    navTitle: "Dịch vụ",
+    navTitle: JsonVI.header.titles[1],
     submenu: [
       {
         title: "Định cư Mỹ",
@@ -113,7 +116,7 @@ export const menuItemsConfigVN = [
     ],
   },
   {
-    navTitle: "Liên hệ",
+    navTitle: JsonVI.header.titles[2],
     dataTarget: "footer",
   },
 ];

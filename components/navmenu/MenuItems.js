@@ -32,25 +32,26 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
       ref={ref}
     >
       {items.submenu ? (
-        <>
-          <button
-            data-target={items.dataTarget ? items.dataTarget : ""}
-            type="button"
-            aria-haspopup="menu"
-            aria-expanded={dropdown ? "true" : "false"}
-            onClick={(e) => {
-              if (items.dataTarget) {
-                handleScrolling(e);
-              }
-              setDropdown((prev) => !prev);
-            }}
-          >
-            {items.file ? (
-              <Link
-                href={`${rootPage}/pdf/${items.file}`}
-                rel="noopener noreferrer"
-                target="_blank"
-                download={false}
+        items.file ? (
+          <>
+            <Link
+              style={{ width: "100%", height: "100%" }}
+              href={`${rootPage}/pdf/${items.file}`}
+              rel="noopener noreferrer"
+              target="_blank"
+              download={false}
+            >
+              <button
+                data-target={items.dataTarget ? items.dataTarget : ""}
+                type="button"
+                aria-haspopup="menu"
+                aria-expanded={dropdown ? "true" : "false"}
+                onClick={(e) => {
+                  if (items.dataTarget) {
+                    handleScrolling(e);
+                  }
+                  setDropdown((prev) => !prev);
+                }}
               >
                 <span
                   className={items.navTitle ? "text-[21px]" : "text-[19px]"}
@@ -62,33 +63,72 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
                 ) : (
                   <span className="arrow" />
                 )}{" "}
-              </Link>
-            ) : (
-              <>
-                <span
-                  className={items.navTitle ? "text-[21px]" : "text-[19px]"}
-                >
-                  {items.title || items.navTitle}{" "}
-                </span>
-                {depthLevel > 0 ? (
-                  <span> &raquo; </span>
-                ) : (
-                  <span className="arrow" />
-                )}{" "}
-              </>
-            )}
-          </button>{" "}
-          <Dropdown
-            depthLevel={depthLevel}
-            submenus={items.submenu}
-            dropdown={dropdown}
-            handleScrolling={handleScrolling}
-          />{" "}
-        </>
+              </button>{" "}
+            </Link>
+            <Dropdown
+              depthLevel={depthLevel}
+              submenus={items.submenu}
+              dropdown={dropdown}
+              handleScrolling={handleScrolling}
+            />{" "}
+          </>
+        ) : (
+          <>
+            <button
+              data-target={items.dataTarget ? items.dataTarget : ""}
+              type="button"
+              aria-haspopup="menu"
+              aria-expanded={dropdown ? "true" : "false"}
+              onClick={(e) => {
+                if (items.dataTarget) {
+                  handleScrolling(e);
+                }
+                setDropdown((prev) => !prev);
+              }}
+            >
+              <span className={items.navTitle ? "text-[21px]" : "text-[19px]"}>
+                {items.title || items.navTitle}{" "}
+              </span>
+              {depthLevel > 0 ? (
+                <span> &raquo; </span>
+              ) : (
+                <span className="arrow" />
+              )}{" "}
+            </button>{" "}
+            <Dropdown
+              depthLevel={depthLevel}
+              submenus={items.submenu}
+              dropdown={dropdown}
+              handleScrolling={handleScrolling}
+            />{" "}
+          </>
+        )
+      ) : items.file ? (
+        <Link
+          style={{ width: "100%", height: "100%" }}
+          href={`${rootPage}/pdf/${items.file}`}
+          rel="noopener noreferrer"
+          target="_blank"
+          download={false}
+        >
+          <button
+            data-target={items.dataTarget ? items.dataTarget : ""}
+            className={items.navTitle ? "text-[21px]" : "text-[19px]"}
+            name="listItem"
+            type="button"
+            onClick={(e) => {
+              if (items.dataTarget) {
+                handleScrolling(e);
+              }
+            }}
+          >
+            {items.title || items.navTitle}
+          </button>
+        </Link>
       ) : (
         <button
           data-target={items.dataTarget ? items.dataTarget : ""}
-          className={items.navTitle ? "text-[21x]" : "text-[19px]"}
+          className={items.navTitle ? "text-[21px]" : "text-[19px]"}
           name="listItem"
           type="button"
           onClick={(e) => {
@@ -97,18 +137,7 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
             }
           }}
         >
-          {items.file ? (
-            <Link
-              href={`${rootPage}/pdf/${items.file}`}
-              rel="noopener noreferrer"
-              target="_blank"
-              download={false}
-            >
-              {items.title || items.navTitle}
-            </Link>
-          ) : (
-            <>{items.title || items.navTitle}</>
-          )}
+          {items.title || items.navTitle}
         </button>
       )}{" "}
     </li>
@@ -116,3 +145,12 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
 };
 
 export default MenuItems;
+
+{
+  /* <Link
+                href={`${rootPage}/pdf/${items.file}`}
+                rel="noopener noreferrer"
+                target="_blank"
+                download={false}
+              ></Link> */
+}

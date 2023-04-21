@@ -1,18 +1,24 @@
 import JsonEN from "../../public/locales/en/common.json" assert { type: "json" };
 import JsonVI from "../../public/locales/vi/common.json" assert { type: "json" };
 
+export const rootPage = "https://free-will-agency.vercel.app/";
+
+//Config menu in English
 export const menuItemsConfigEN = [
   {
     navTitle: JsonEN.header.titles[0],
     submenu: [
       {
         title: "Picth Deck FreeWill.PDF",
+        file: "pdf1.pdf",
       },
       {
         title: "Picth Deck BioTech.PDF",
+        file: "pdf2.pdf",
       },
       {
         title: "Picth Deck Hayyat.PDF",
+        file: "pdf3.pdf",
       },
     ],
   },
@@ -61,18 +67,22 @@ export const menuItemsConfigEN = [
   },
 ];
 
+//Config menu in VietNamese
 export const menuItemsConfigVN = [
   {
     navTitle: JsonVI.header.titles[0],
     submenu: [
       {
         title: "Picth Deck FreeWill.PDF",
+        file: "pdf1.pdf",
       },
       {
         title: "Picth Deck BioTech.PDF",
+        file: "pdf2.pdf",
       },
       {
         title: "Picth Deck Hayyat.PDF",
+        file: "pdf3.pdf",
       },
     ],
   },

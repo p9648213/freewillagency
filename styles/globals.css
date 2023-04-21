@@ -96,10 +96,6 @@ header {
   font-size: 21px;
 }
 
-.menu-items a {
-  display: block;
-}
-
 .menu-items button {
   color: inherit;
   font-size: inherit;
@@ -109,14 +105,12 @@ header {
   width: 100%;
 }
 
-.menu-items a,
 .menu-items button {
   width: 100%;
   text-align: left;
   padding: 0.7rem 1rem;
 }
 
-.menu-items a:hover,
 .menu-items button:hover {
   background-color: #0e7196;
   color: white;

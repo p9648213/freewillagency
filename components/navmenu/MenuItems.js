@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import { rootPage } from "./menuItemsConfig";
 
 import Dropdown from "./Dropdown";
 
@@ -43,14 +45,38 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
               setDropdown((prev) => !prev);
             }}
           >
-            <span className={items.navTitle ? "text-[21px]" : "text-[19px]"}>
-              {items.title || items.navTitle}{" "}
-            </span>
-            {depthLevel > 0 ? (
-              <span> &raquo; </span>
+            {items.file ? (
+              <Link
+                href={`${rootPage}/pdf/${items.file}`}
+                rel="noopener noreferrer"
+                target="_blank"
+                download={false}
+              >
+                <span
+                  className={items.navTitle ? "text-[21px]" : "text-[19px]"}
+                >
+                  {items.title || items.navTitle}{" "}
+                </span>
+                {depthLevel > 0 ? (
+                  <span> &raquo; </span>
+                ) : (
+                  <span className="arrow" />
+                )}{" "}
+              </Link>
             ) : (
-              <span className="arrow" />
-            )}{" "}
+              <>
+                <span
+                  className={items.navTitle ? "text-[21px]" : "text-[19px]"}
+                >
+                  {items.title || items.navTitle}{" "}
+                </span>
+                {depthLevel > 0 ? (
+                  <span> &raquo; </span>
+                ) : (
+                  <span className="arrow" />
+                )}{" "}
+              </>
+            )}
           </button>{" "}
           <Dropdown
             depthLevel={depthLevel}
@@ -71,7 +97,18 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
             }
           }}
         >
-          {items.title || items.navTitle}
+          {items.file ? (
+            <Link
+              href={`${rootPage}/pdf/${items.file}`}
+              rel="noopener noreferrer"
+              target="_blank"
+              download={false}
+            >
+              {items.title || items.navTitle}
+            </Link>
+          ) : (
+            <>{items.title || items.navTitle}</>
+          )}
         </button>
       )}{" "}
     </li>

@@ -10,7 +10,7 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
   let ref = useRef();
 
   useEffect(() => {
-    const handler = (event) => {
+    const handlerClick = (event) => {
       if (dropdown && ref.current && !ref.current.contains(event.target)) {
         setDropdown(false);
       }
@@ -19,17 +19,35 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
       }
     };
 
-    document.addEventListener("click", handler);
+    const handler = (event) => {
+      if (dropdown && ref.current && !ref.current.contains(event.target)) {
+        setDropdown(false);
+      }
+    };
+
+    document.addEventListener("click", handlerClick);
+    document.addEventListener("touchstart", handler);
 
     return () => {
-      document.removeEventListener("click", handler);
+      document.removeEventListener("click", handlerClick);
+      document.removeEventListener("touchstart", handler);
     };
   }, [dropdown]);
+
+  const onMouseEnter = () => {
+    window.innerWidth > 960 && setDropdown(true);
+  };
+
+  const onMouseLeave = () => {
+    window.innerWidth > 960 && setDropdown(false);
+  };
 
   return (
     <li
       className="menu-items text-[#0E7196] font-[550] whitespace-nowrap flex items-center h-full"
       ref={ref}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       {items.submenu ? (
         items.file ? (

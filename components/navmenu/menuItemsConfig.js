@@ -1,7 +1,7 @@
 import JsonEN from "../../public/locales/en/common.json" assert { type: "json" };
 import JsonVI from "../../public/locales/vi/common.json" assert { type: "json" };
 
-export const rootPage = "http://localhost:3000";
+export const rootPage = "https://free-will-agency.vercel.app/";
 
 //Config menu in English
 export const menuItemsConfigEN = [

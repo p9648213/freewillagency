@@ -1,7 +1,19 @@
 import JsonEN from "../../public/locales/en/common.json" assert { type: "json" };
 import JsonVI from "../../public/locales/vi/common.json" assert { type: "json" };
 
-export const rootPage = "https://free-will-agency.vercel.app";
+const environtment = process.env.NEXT_PUBLIC_MODE;
+
+let url;
+
+if (environtment === "DEVELOPMENT") {
+  url = "http://localhost:3000";
+} else if (environtment === "TESTING") {
+  url = "https://free-will-agency.vercel.app";
+} else {
+  url = "https://www.freewillagency.com";
+}
+
+export const rootPage = url;
 
 //Config menu in English
 export const menuItemsConfigEN = [

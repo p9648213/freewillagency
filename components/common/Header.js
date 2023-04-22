@@ -48,48 +48,6 @@ function Header({ handleScrolling }) {
 
         <Navbar handleScrolling={handleScrolling} />
 
-        {/* <div className="flex-shrink-0 flex items-center justify-start gap-16 text-[#0E7196] text-[21px] font-[550]">
-          <div className="h-full flex justify-center items-center relative z-20">
-            <div className="h-full px-16 flex items-center cursor-pointer hover:bg-[#0E7196] hover:text-white">
-              {t("common:header:titles:0")}
-            </div>
-            <div className="absolute z-10 bg-white top-[115px] text-[#0E7196] left-0 right-0 text-center py-5 text-[18px]">
-              <div className="flex flex-col gap-6">
-                <div>Picth Deck FreeWill.PDF</div>
-                <div>Picth Deck BioTech.PDF</div>
-                <div>Picth Deck Hayyat.PDF</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="h-full flex justify-center items-center relative z-20">
-            <div className="h-full px-16 flex items-center cursor-pointer hover:bg-[#0E7196] hover:text-white">
-              {t("common:header:titles:1")}
-            </div>
-            <div className="absolute z-10 bg-white top-[115px] text-[#0E7196] left-0 right-0 text-center text-[18px]">
-              <div className="flex flex-col gap-6">
-                <div className="relative">
-                  <div className="py-2">Định cư Mỹ</div>
-                  <div className="absolute top-0 bottom-0 left-[199px] bg-white whitespace-nowrap px-5 py-2 flex justify-center items-center">
-                    Chương trình EB5
-                  </div>
-                </div>
-                <div className="py-2">Định cư Úc</div>
-                <div className="py-2">Investment</div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="h-full flex justify-center items-center relative z-20"
-            data-target="footer"
-            onClick={handleScrolling}
-          >
-            <div className="h-full px-16 flex items-center cursor-pointer hover:bg-[#0E7196] hover:text-white">
-              {t("common:header:titles:2")}
-            </div>
-          </div>
-        </div> */}
         <div className=" flex-shrink-0 flex items-center justify-center mx-3">
           <button
             onClick={switchLanguage}

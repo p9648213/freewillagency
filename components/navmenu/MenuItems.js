@@ -163,12 +163,3 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
 };
 
 export default MenuItems;
-
-{
-  /* <Link
-                href={`${rootPage}/pdf/${items.file}`}
-                rel="noopener noreferrer"
-                target="_blank"
-                download={false}
-              ></Link> */
-}

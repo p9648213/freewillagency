@@ -62,7 +62,6 @@ select::-ms-expand {
   transition: all 0.3s ease-out;
 }
 
-/* TESTING ---------------------------------------------------- */
 header {
   height: 58px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -145,5 +144,5 @@ header {
 .dropdown.dropdown-submenu {
   position: absolute;
   left: 100%;
-  top: -1px;
+  top: 0px;
 }

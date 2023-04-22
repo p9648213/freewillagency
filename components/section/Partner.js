@@ -26,18 +26,27 @@ function Partner() {
             moveVertical={3}
           />
           <PartnerImage imageName="partner-img9.webp" alt="Infinity" />
-          <PartnerImage
-            imageName="partner-img3.webp"
-            alt="Spinel"
-            scaleWidth={45}
-            scaleHeight={45}
-          />
+          <PartnerImage imageName="partner-img10.webp" alt="ShopOff" />
           <PartnerImage imageName="partner-img6.webp" alt="Hyatt" />
           <PartnerImage
             imageName="partner-img8.webp"
             alt="Family Office"
             scaleWidth={120}
             moveVertical={3}
+          />
+          <PartnerImage
+            imageName="partner-img11.webp"
+            alt="Golden Phoenix"
+            scaleWidth={70}
+            scaleHeight={70}
+            moveHorizontal={10}
+            moveVertical={3}
+          />
+          <PartnerImage
+            imageName="partner-img12.webp"
+            alt="Freewill agency"
+            scaleHeight={73}
+            scaleWidth={73}
           />
           <PartnerImage
             imageName="partner-img7.webp"

@@ -146,3 +146,19 @@ header {
   left: 100%;
   top: 0px;
 }
+
+.fade-in {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

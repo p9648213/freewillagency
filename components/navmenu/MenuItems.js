@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { rootPage } from "./menuItemsConfig";
+import { rootPage } from "../../config/menuItemsConfig";
 
 import Dropdown from "./Dropdown";
 

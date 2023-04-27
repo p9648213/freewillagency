@@ -1,4 +1,7 @@
-import { menuItemsConfigEN, menuItemsConfigVN } from "./menuItemsConfig";
+import {
+  menuItemsConfigEN,
+  menuItemsConfigVN,
+} from "../../config/menuItemsConfig";
 import MenuItems from "./MenuItems";
 import { useTranslation } from "next-i18next";
 

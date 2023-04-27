@@ -1,5 +1,5 @@
-import JsonEN from "../../public/locales/en/common.json" assert { type: "json" };
-import JsonVI from "../../public/locales/vi/common.json" assert { type: "json" };
+import JsonEN from "../public/locales/en/common.json" assert { type: "json" };
+import JsonVI from "../public/locales/vi/common.json" assert { type: "json" };
 
 const environtment = process.env.NEXT_PUBLIC_MODE;
 

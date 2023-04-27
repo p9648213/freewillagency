@@ -1,19 +1,12 @@
 export const slidesEN = [
   {
     img: "banner1.webp",
-    details: {
-      title: "US IMMIGRATION\nEB5 PROGRAM",
-      button: {
-        type: "target",
-        target: "program",
-        title: "READ MORE",
-      },
-      //   button:{
-      //     type:"link",
-      //     target:"google.com"
-      //   }
-    },
+    //   button:{
+    //     type:"link",
+    //     target:"google.com"
+    //   }
   },
+
   {
     img: "program.webp",
     details: {

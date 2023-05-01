@@ -17,7 +17,7 @@ function Partner() {
         <div className="text-[white] text-[30px] font-bold text-center">
           {t("common:partner:title")}
           <br />
-          <span className="text-[#FFDE59]">Freewill Agency.,CO LTD</span>
+          <span className="text-[#FFDE59]">Freewill Agency CO.,LTD</span>
         </div>
         <div className="grid grid-cols-4 gap-14">
           <PartnerImage

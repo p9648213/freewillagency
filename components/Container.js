@@ -35,7 +35,7 @@ function Container() {
         handleShow={setShowModal}
       />
       <Header handleScrolling={handleClick} />
-      {/* <Banner handleScrolling={handleClick} /> */}
+      <Banner handleScrolling={handleClick} />
       {/* <AboutUs />
       <Service />
       <PrBanner />

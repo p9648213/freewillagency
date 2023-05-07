@@ -102,7 +102,7 @@ function Banner({ handleScrolling }) {
           >
             <div className="flex flex-col items-center gap-12">
               <div
-                className={`text-white font-bold text-[68px] leading-none text-center whitespace-pre`}
+                className={`text-white font-bold text-[68px] leading-none text-center whitespace-pre max-sm:text-[35px]`}
               >
                 {slides[currentSlide].details.title}
               </div>
@@ -111,7 +111,7 @@ function Banner({ handleScrolling }) {
                 slides[currentSlide].details?.button?.type === "link" && (
                   <Link
                     href={slides[currentSlide].details.button.target || "#"}
-                    className="bg-[#0C6C90] text-white px-14 py-4 text-[15px] font-sans font-bold rounded-xl"
+                    className="bg-[#0C6C90] text-white px-14 py-4 text-[15px] font-sans font-bold rounded-xl max-sm:text-[10px] max-sm:px-8 max-sm:py-3"
                   >
                     {slides[currentSlide].details.button.title}
                   </Link>
@@ -123,7 +123,7 @@ function Banner({ handleScrolling }) {
                     data-target={
                       slides[currentSlide].details.button.target || "program"
                     }
-                    className="bg-[#0C6C90] text-white px-14 py-4 text-[15px] font-sans font-bold rounded-xl"
+                    className="bg-[#0C6C90] text-white px-14 py-4 text-[15px] font-sans font-bold rounded-xl max-sm:text-[10px] max-sm:px-8 max-sm:py-3"
                     onClick={handleScrolling}
                   >
                     {slides[currentSlide].details.button.title}
@@ -134,12 +134,12 @@ function Banner({ handleScrolling }) {
         )}
 
         <div
-          className={`absolute left-10 top-0 bottom-0 flex items-center justify-center slide-animation ${
+          className={`absolute left-10 top-0 bottom-0 flex items-center justify-center slide-animation max-sm:left-3 ${
             isPaused ? "opacity-100" : "opacity-0"
           }`}
         >
           <button
-            className="text-white text-2xl rounded-full bg-black hover:bg-[#063b4e] bg-opacity-50 px-3 py-2 focus:outline-none"
+            className="text-white text-2xl rounded-full bg-black hover:bg-[#063b4e] bg-opacity-50 px-3 py-2 focus:outline-none max-sm:text-xl"
             onClick={handlePrevClick}
           >
             <FaArrowLeft />
@@ -147,12 +147,12 @@ function Banner({ handleScrolling }) {
         </div>
 
         <div
-          className={`absolute right-10 top-0 bottom-0 flex items-center justify-center slide-animation ${
+          className={`absolute right-10 top-0 bottom-0 flex items-center justify-center slide-animation max-sm:right-3 ${
             isPaused ? "opacity-100" : "opacity-0"
           }`}
         >
           <button
-            className="text-white text-2xl rounded-full bg-black hover:bg-[#063b4e] bg-opacity-50 px-3 py-2 focus:outline-none"
+            className="text-white text-2xl rounded-full bg-black hover:bg-[#063b4e] bg-opacity-50 px-3 py-2 focus:outline-none max-sm:text-xl"
             onClick={handleNextClick}
           >
             <FaArrowRight />

@@ -20,7 +20,7 @@ function Header({ handleScrolling }) {
 
   return (
     <div className="h-[116px] flex flex-row bg-white justify-center items-center">
-      <div className="flex gap-28 h-full">
+      <div className="gap-28 h-full sm:flex">
         <div
           className="h-full w-[320px] translate-y-[-15px]
           flex relative items-center justify-center"
@@ -48,7 +48,7 @@ function Header({ handleScrolling }) {
 
         <Navbar handleScrolling={handleScrolling} />
 
-        <div className=" flex-shrink-0 flex items-center justify-center mx-3">
+        <div className="flex-shrink-0 flex items-center justify-center mx-3 absolute top-[30px] right-0 sm:static">
           <button
             onClick={switchLanguage}
             className="text-[16px] text-white bg-[#0C6C90] font-[550] px-12 py-2 rounded-full mx-3"

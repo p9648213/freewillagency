@@ -35,8 +35,8 @@ function Container() {
         handleShow={setShowModal}
       />
       <Header handleScrolling={handleClick} />
-      <Banner handleScrolling={handleClick} />
-      <AboutUs />
+      {/* <Banner handleScrolling={handleClick} /> */}
+      {/* <AboutUs />
       <Service />
       <PrBanner />
       <Promotion />
@@ -49,7 +49,7 @@ function Container() {
         handleError={setIsError}
         handleShow={setShowModal}
       />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

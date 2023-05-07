@@ -5,7 +5,7 @@ import FaceBook from "@/components/common/FaceBook";
 function App({ Component, pageProps }) {
   return (
     <>
-      <FaceBook />
+      {/* <FaceBook /> */}
       <Component {...pageProps} />
     </>
   );

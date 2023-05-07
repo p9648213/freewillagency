@@ -10,8 +10,8 @@ const Navbar = ({ handleScrolling }) => {
   const language = i18n.language;
   const menu = language === "vi" ? menuItemsConfigVN : menuItemsConfigEN;
   return (
-    <nav className="flex justify-center items-center h-full">
-      <ul className="menus justify-center items-center h-full">
+    <nav className="flex justify-center items-center h-full max-sm:h-fit">
+      <ul className="menus justify-center items-center h-full max-sm:gap-0">
         {" "}
         {menu.map((menu, index) => {
           const depthLevel = 0;

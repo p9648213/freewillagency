@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Head>
         <title>Freewill Agency</title>
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <meta
           name="description"

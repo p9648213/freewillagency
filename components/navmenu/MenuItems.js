@@ -72,7 +72,11 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
                 }}
               >
                 <span
-                  className={items.navTitle ? "text-[21px]" : "text-[19px]"}
+                  className={
+                    items.navTitle
+                      ? "text-[21px] max-sm:text-[17px]"
+                      : "text-[19px] max-sm:text-[15px]"
+                  }
                 >
                   {items.title || items.navTitle}{" "}
                 </span>
@@ -104,7 +108,13 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
                 setDropdown((prev) => !prev);
               }}
             >
-              <span className={items.navTitle ? "text-[21px]" : "text-[19px]"}>
+              <span
+                className={
+                  items.navTitle
+                    ? "text-[21px] max-sm:text-[17px]"
+                    : "text-[19px] max-sm:text-[15px]"
+                }
+              >
                 {items.title || items.navTitle}{" "}
               </span>
               {depthLevel > 0 ? (
@@ -131,7 +141,11 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
         >
           <button
             data-target={items.dataTarget ? items.dataTarget : ""}
-            className={items.navTitle ? "text-[21px]" : "text-[19px]"}
+            className={
+              items.navTitle
+                ? "text-[21px] max-sm:text-[17px]"
+                : "text-[19px] max-sm:text-[15px]"
+            }
             name="listItem"
             type="button"
             onClick={(e) => {
@@ -146,7 +160,11 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
       ) : (
         <button
           data-target={items.dataTarget ? items.dataTarget : ""}
-          className={items.navTitle ? "text-[21px]" : "text-[19px]"}
+          className={
+            items.navTitle
+              ? "text-[21px] max-sm:text-[17px]"
+              : "text-[19px] max-sm:text-[15px] max-sm:whitespace-normal"
+          }
           name="listItem"
           type="button"
           onClick={(e) => {

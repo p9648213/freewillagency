@@ -25,7 +25,7 @@ function Header({ handleScrolling }) {
           className="h-full w-[320px] translate-y-[-15px]
           flex relative items-center justify-center max-sm:w-full max-sm:justify-start max-sm:translate-x-10"
         >
-          <div className="w-[150px] cursor-pointer max-sm:w-[130px]">
+          <div className="w-[150px] cursor-pointer max-sm:w-[110px]">
             <Image
               src="/assets/logo.webp"
               alt="logo"
@@ -36,7 +36,7 @@ function Header({ handleScrolling }) {
             />
           </div>
           <div
-            className={`absolute text-center w-full top-[50%] left-[50%] translate-x-[-50%] text-[#0c6c90] font-[550] max-sm:w-fit max-sm:left-0 max-sm:translate-x-[-10%] max-sm:text-[12px] max-sm:top-[55%] ${
+            className={`absolute text-center w-full top-[50%] left-[50%] translate-x-[-50%] text-[#0c6c90] font-[550] max-sm:w-fit max-sm:left-0 max-sm:translate-x-[-10%] max-sm:text-[10px] max-sm:top-[55%] ${
               language === "en"
                 ? "text-[16px] translate-y-[140%]"
                 : "text-[14px] translate-y-[165%]"
@@ -48,10 +48,10 @@ function Header({ handleScrolling }) {
 
         <Navbar handleScrolling={handleScrolling} />
 
-        <div className="flex-shrink-0 flex items-center justify-center mx-3 max-sm:absolute max-sm:top-0 max-sm:right-0 max-sm:translate-y-[95%]">
+        <div className="flex-shrink-0 flex items-center justify-center mx-3 max-sm:absolute max-sm:top-0 max-sm:right-0 max-sm:translate-y-[100%]">
           <button
             onClick={switchLanguage}
-            className="text-[16px] text-white bg-[#0C6C90] font-[550] px-12 py-2 rounded-full mx-3 max-sm:text-[12px] max-sm:px-10"
+            className="text-[16px] text-white bg-[#0C6C90] font-[550] px-12 py-2 rounded-full mx-3 max-sm:text-[10px] max-sm:px-10"
           >
             {language === "vi" ? "ENG" : "VN"}
           </button>

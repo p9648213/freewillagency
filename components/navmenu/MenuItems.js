@@ -74,8 +74,8 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
                 <span
                   className={
                     items.navTitle
-                      ? "text-[21px] max-sm:text-[17px]"
-                      : "text-[19px] max-sm:text-[15px]"
+                      ? "text-[21px] max-sm:text-[15px]"
+                      : "text-[19px] max-sm:text-[13px] max-sm:whitespace-normal"
                   }
                 >
                   {items.title || items.navTitle}{" "}
@@ -111,8 +111,8 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
               <span
                 className={
                   items.navTitle
-                    ? "text-[21px] max-sm:text-[17px]"
-                    : "text-[19px] max-sm:text-[15px]"
+                    ? "text-[21px] max-sm:text-[15px]"
+                    : "text-[19px] max-sm:text-[13px] max-sm:whitespace-normal"
                 }
               >
                 {items.title || items.navTitle}{" "}
@@ -143,8 +143,8 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
             data-target={items.dataTarget ? items.dataTarget : ""}
             className={
               items.navTitle
-                ? "text-[21px] max-sm:text-[17px]"
-                : "text-[19px] max-sm:text-[15px]"
+                ? "text-[21px] max-sm:text-[15px]"
+                : "text-[19px] max-sm:text-[13px] max-sm:whitespace-normal"
             }
             name="listItem"
             type="button"
@@ -162,8 +162,8 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
           data-target={items.dataTarget ? items.dataTarget : ""}
           className={
             items.navTitle
-              ? "text-[21px] max-sm:text-[17px]"
-              : "text-[19px] max-sm:text-[15px] max-sm:whitespace-normal"
+              ? "text-[21px] max-sm:text-[15px]"
+              : "text-[19px] max-sm:text-[13px] max-sm:whitespace-normal"
           }
           name="listItem"
           type="button"

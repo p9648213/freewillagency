@@ -20,7 +20,7 @@ function Header({ handleScrolling }) {
 
   return (
     <div className="h-[116px] flex flex-row bg-white justify-center items-center">
-      <div className="gap-28 h-full sm:flex">
+      <div className="gap-28 h-full relative sm:flex">
         <div
           className="h-full w-[320px] translate-y-[-15px]
           flex relative items-center justify-center"

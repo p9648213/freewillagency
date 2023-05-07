@@ -88,7 +88,7 @@ function Banner({ handleScrolling }) {
               src={`/assets/${slides[currentSlide].img}`}
               width={2160}
               height={1080}
-              className={`max-h-[760px] max-sm:h-[400px] ${
+              className={`max-h-[760px] max-sm:h-[350px] ${
                 slides[currentSlide].details ? "opacity-50" : "opacity-100"
               }`}
               alt={slides[currentSlide].img}

@@ -27,7 +27,7 @@ function Container() {
   };
 
   return (
-    <div className="font-sans min-w-fit">
+    <div className="font-sans sm:min-w-fit">
       <ReportModal
         message={reportMessage}
         isError={isError}
@@ -36,8 +36,8 @@ function Container() {
       />
       <Header handleScrolling={handleClick} />
       <Banner handleScrolling={handleClick} />
-      {/* <AboutUs />
-      <Service />
+      <AboutUs />
+      {/* <Service />
       <PrBanner />
       <Promotion />
       <Program handleScrolling={handleClick} />

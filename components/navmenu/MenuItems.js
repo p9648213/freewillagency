@@ -75,7 +75,7 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
                   className={
                     items.navTitle
                       ? "text-[21px] max-sm:text-[15px]"
-                      : "text-[19px] max-sm:text-[13px] max-sm:whitespace-normal"
+                      : "text-[19px] max-sm:text-[13px]"
                   }
                 >
                   {items.title || items.navTitle}{" "}
@@ -112,7 +112,7 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
                 className={
                   items.navTitle
                     ? "text-[21px] max-sm:text-[15px]"
-                    : "text-[19px] max-sm:text-[13px] max-sm:whitespace-normal"
+                    : "text-[19px] max-sm:text-[13px]"
                 }
               >
                 {items.title || items.navTitle}{" "}
@@ -144,7 +144,7 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
             className={
               items.navTitle
                 ? "text-[21px] max-sm:text-[15px]"
-                : "text-[19px] max-sm:text-[13px] max-sm:whitespace-normal"
+                : "text-[19px] max-sm:text-[13px]"
             }
             name="listItem"
             type="button"
@@ -163,7 +163,7 @@ const MenuItems = ({ items, depthLevel, handleScrolling }) => {
           className={
             items.navTitle
               ? "text-[21px] max-sm:text-[15px]"
-              : "text-[19px] max-sm:text-[13px] max-sm:whitespace-normal"
+              : "text-[19px] max-sm:text-[13px]"
           }
           name="listItem"
           type="button"

@@ -5,7 +5,7 @@ function ProgHighlight({ handleScrolling }) {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-[#022633] relative">
+    <div className="bg-[#022633] relative max-sm:hidden">
       <div
         className="h-[691px] bg-cover bg-bottom bg-no-repeat opacity-60 w-full flex items-center justify-center"
         style={{

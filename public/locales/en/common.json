@@ -52,6 +52,7 @@
   },
   "program-highlight": {
     "title": "US IMMIGRATION PROGRAMS\n OUTSTANDING",
+    "title-mb": "US IMMIGRATION PROGRAMS\n OUTSTANDING",
     "program": ["EB5 PROGRAM", "EB3 PROGRAM", "L1 PROGRAM"],
     "button": "REGISTER FOR CONSULTATION"
   },

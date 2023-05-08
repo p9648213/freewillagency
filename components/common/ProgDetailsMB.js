@@ -19,7 +19,7 @@ function ProgDetailsMB({ handleScrolling }) {
 
       <div className="flex flex-col gap-2">
         <div className="leading-[1.6] flex flex-col">
-          <div className="text-[#FFBE27] text-[18px] font-bold">
+          <div className="text-[#FFBE27] text-[16px] font-bold pb-1">
             {t("common:program-banner:title")}{" "}
             <span className="text-[#ADFFFD]">FREEWILL AGENCY</span>
           </div>

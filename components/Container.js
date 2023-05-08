@@ -38,8 +38,8 @@ function Container() {
       <Banner handleScrolling={handleClick} />
       <AboutUs />
       <Service />
-      {/* <PrBanner />
-      <Promotion />
+      <PrBanner />
+      {/* <Promotion />
       <Program handleScrolling={handleClick} />
       <Advise />
       <Partner />

@@ -43,8 +43,8 @@ function Container() {
       <Program handleScrolling={handleClick} />
       <Advise />
       <Partner />
-      {/* <Member />
-      <Consultation
+      <Member />
+      {/* <Consultation
         handleMessage={setReportMessage}
         handleError={setIsError}
         handleShow={setShowModal}

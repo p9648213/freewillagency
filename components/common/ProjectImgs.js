@@ -7,7 +7,7 @@ function ProjectImgs() {
 
   return (
     <div
-      className="h-[880px] bg-cover bg-no-repeat"
+      className="h-[880px] bg-cover bg-no-repeat max-sm:hidden"
       style={{
         backgroundImage: `url("/assets/program.webp")`,
       }}

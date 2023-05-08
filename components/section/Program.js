@@ -4,6 +4,7 @@ import ProjectImgs from "../common/ProjectImgs";
 import ProjectHighlight from "../common/ProjectHighlight";
 import ProgHighlightMB from "../common/ProgHighlightMB";
 import ProjectHighlightMB from "../common/ProjectHighlightMB";
+import ProjectImgsMB from "../common/ProjectImgsMB";
 
 function Program({ handleScrolling }) {
   return (
@@ -12,7 +13,8 @@ function Program({ handleScrolling }) {
       <ProgHighlightMB handleScrolling={handleScrolling} />
       <ProjectHighlight handleScrolling={handleScrolling} />
       <ProjectHighlightMB handleScrolling={handleScrolling} />
-      {/* <ProjectImgs /> */}
+      <ProjectImgs />
+      <ProjectImgsMB />
       {/* <ProgDetails handleScrolling={handleScrolling} /> */}
     </div>
   );

@@ -10,7 +10,7 @@ function MemberMB() {
           {t("common:member:title")}
         </div>
         <div className="h-[4px] w-[77px] bg-[#FFDE63]"></div>
-        <div className="text-[#018489] text-[19px] leading-[1.4]">
+        <div className="text-[#018489] text-[17px] leading-[1.4]">
           {t("common:member:slogan")}
         </div>
 

@@ -46,12 +46,11 @@ function ProjectHighlightMB({ handleScrolling }) {
                   "linear-gradient(90deg, rgba(13, 98, 242, 0.3), rgb(7, 58, 145))",
               }}
             ></div>
-            <div className="text-[20px] text-center text-white font-bold z-10 leading-[1.3]">
+            <div className="text-[20px] text-justify text-white font-bold z-10 leading-[1.3] px-4">
               {t("common:projecthighlight:article:title:0")}{" "}
               <span className="text-[#F0C519]">
                 {t("common:projecthighlight:article:title:1")}
               </span>{" "}
-              <br />
               {t("common:projecthighlight:article:title:2")}
             </div>
           </div>

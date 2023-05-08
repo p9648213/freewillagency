@@ -1,5 +1,6 @@
 import ProgHighlight from "../common/ProgHighlight";
 import ProgDetails from "../common/ProgDetails";
+import ProgDetailsMB from "../common/ProgDetailsMB";
 import ProjectImgs from "../common/ProjectImgs";
 import ProjectHighlight from "../common/ProjectHighlight";
 import ProgHighlightMB from "../common/ProgHighlightMB";
@@ -15,7 +16,8 @@ function Program({ handleScrolling }) {
       <ProjectHighlightMB handleScrolling={handleScrolling} />
       <ProjectImgs />
       <ProjectImgsMB />
-      {/* <ProgDetails handleScrolling={handleScrolling} /> */}
+      <ProgDetails handleScrolling={handleScrolling} />
+      <ProgDetailsMB handleScrolling={handleScrolling} />
     </div>
   );
 }

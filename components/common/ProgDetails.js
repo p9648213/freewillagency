@@ -5,7 +5,7 @@ function ProgDetails({ handleScrolling }) {
   const { t } = useTranslation();
 
   return (
-    <div className="mt-1 bg-[#013C52] p-4 h-[242px] flex justify-center items-center">
+    <div className="mt-1 bg-[#013C52] p-4 h-[242px] flex justify-center items-center max-sm:hidden">
       <div className="flex">
         <div className="w-[391px] h-[214px] border-4 border-white translate-x-[-30px] mr-3 relative">
           <Image
@@ -27,7 +27,7 @@ function ProgDetails({ handleScrolling }) {
               {t("common:program-banner:body")}
             </div>
           </div>
-          <div className="text-[19px] text-white">
+          <div className="text-[19px] text-white font-bold">
             {t("common:program-banner:slogan")}
           </div>
         </div>

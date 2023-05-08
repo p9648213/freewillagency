@@ -7,7 +7,7 @@ function ProjectHighlight({ handleScrolling }) {
 
   return (
     <div
-      className="h-[870px]"
+      className="h-[870px] max-sm:hidden"
       style={{
         background: "linear-gradient(rgb(7, 58, 145), rgb(40, 162, 160))",
       }}
@@ -198,7 +198,7 @@ function ProjectHighlight({ handleScrolling }) {
                   <div className="font-bold text-[30px]">X</div>
                   <div className="w-[61px] h-[45px]">
                     <Image
-                      alt="hyattplace"
+                      alt="freewillagency"
                       className="w-full h-full"
                       width={400}
                       height={400}

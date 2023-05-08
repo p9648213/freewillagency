@@ -25,7 +25,7 @@ function ProgHighlightMB({ handleScrolling }) {
           />
         </div>
 
-        <div className="text-white font-bold text-[25px] text-center underline whitespace-pre">
+        <div className="text-white font-bold text-[24px] text-center underline whitespace-pre">
           {t("common:program-highlight:title-mb")}
         </div>
 

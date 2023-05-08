@@ -41,9 +41,9 @@ function Container() {
       <PrBanner />
       <Promotion />
       <Program handleScrolling={handleClick} />
-      {/* <Advise />
+      <Advise />
       <Partner />
-      <Member />
+      {/* <Member />
       <Consultation
         handleMessage={setReportMessage}
         handleError={setIsError}

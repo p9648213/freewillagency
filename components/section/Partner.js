@@ -13,13 +13,13 @@ function Partner() {
           "linear-gradient(180deg, rgba(21, 66, 144, 1.0), rgba(5, 31, 77, 1.0))",
       }}
     >
-      <div className="flex flex-col justify-center items-center gap-12">
-        <div className="text-[white] text-[30px] font-bold text-center">
+      <div className="flex flex-col justify-center items-center gap-12 max-sm:gap-9">
+        <div className="text-[white] text-[30px] font-bold text-center max-sm:text-[24px]">
           {t("common:partner:title")}
           <br />
           <span className="text-[#FFDE59]">Freewill Agency CO.,LTD</span>
         </div>
-        <div className="grid grid-cols-4 gap-14">
+        <div className="grid grid-cols-4 gap-14 max-sm:grid-cols-1 max-sm:gap-7">
           <PartnerImage
             imageName="partner-img2.webp"
             alt="Smart Pay"

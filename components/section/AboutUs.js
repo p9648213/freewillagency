@@ -66,7 +66,7 @@ function AboutUs() {
       </div>
 
       <div
-        className="flex justify-center items-center pb-16 max-sm:flex-col max-sm:pb-12"
+        className="flex justify-center items-center pb-16 max-sm:flex-col max-sm:pb-0"
         style={{
           background: "linear-gradient(rgb(12, 108, 144), rgb(109, 213, 237))",
         }}

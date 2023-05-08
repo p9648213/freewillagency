@@ -186,6 +186,10 @@ header {
     column-gap: 100px;
     list-style: none;
   }
+  html,
+  body {
+    overflow-x: visible;
+  }
 }
 
 @keyframes fadeIn {
@@ -195,4 +199,9 @@ header {
   to {
     opacity: 1;
   }
+}
+
+html,
+body {
+  overflow-x: hidden;
 }

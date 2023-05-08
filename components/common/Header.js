@@ -19,11 +19,11 @@ function Header({ handleScrolling }) {
   };
 
   return (
-    <div className="flex flex-row bg-white justify-center items-center max-sm:justify-start sm:h-[116px]">
+    <div className="flex flex-row bg-white justify-center items-center max-sm:justify-start sm:h-[116px] max-sm:w-full">
       <div className="gap-28 h-full flex max-sm:block max-sm:w-full">
         <div
           className="h-full w-[320px] translate-y-[-15px]
-          flex relative items-center justify-center max-sm:w-full max-sm:justify-start max-sm:translate-x-10"
+          flex relative items-center justify-center max-sm:justify-start max-sm:translate-x-10 max-sm:w-full"
         >
           <div className="w-[150px] cursor-pointer max-sm:w-[110px]">
             <Image

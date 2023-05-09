@@ -44,12 +44,12 @@ function Container() {
       <Advise />
       <Partner />
       <Member />
-      {/* <Consultation
+      <Consultation
         handleMessage={setReportMessage}
         handleError={setIsError}
         handleShow={setShowModal}
       />
-      <Footer /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -106,16 +106,16 @@ function Consultation({ handleMessage, handleError, handleShow }) {
       >
         <div className="flex flex-col justify-center items-center h-full gap-8">
           <div
-            className="w-[147px] h-[147px] bg-white bg-no-repeat bg-cover rounded-full"
+            className="w-[147px] h-[147px] bg-white bg-no-repeat bg-cover rounded-full max-sm:w-[140px] max-sm:h-[140px]"
             style={{
               backgroundImage: 'url("/assets/logo.webp")',
             }}
           ></div>
-          <div className="text-[27px] text-[white] font-bold leading-[1.2] text-center whitespace-pre">
+          <div className="text-[27px] text-[white] font-bold leading-[1.2] text-center whitespace-pre max-sm:text-[22px]">
             {t("common:consultation:title")}
           </div>
           <div
-            className="w-[485px] h-[485px] rounded-full flex justify-center items-center"
+            className="w-[485px] h-[485px] rounded-full flex justify-center items-center max-sm:w-[345px] max-sm:h-[345px]"
             style={{
               background:
                 "linear-gradient(180deg, rgba(12, 108, 144, 1), rgba(1, 60, 82, 1))",
@@ -126,18 +126,18 @@ function Consultation({ handleMessage, handleError, handleShow }) {
                 language === "en" ? "gap-3" : "gap-7"
               }`}
             >
-              <div className="text-[23px] text-white font-bold leading-[1.4] px-2 whitespace-pre text-center">
+              <div className="text-[23px] text-white font-bold leading-[1.4] px-2 whitespace-pre text-center max-sm:hidden">
                 {t("common:consultation:form-title")}
               </div>
               <form
-                className="flex w-[290px] flex-col gap-4"
+                className="flex w-[290px] flex-col gap-4 max-sm:w-[230px]"
                 onSubmit={handleSubmit}
               >
                 <div className="flex flex-col gap-2 consultation-input-container">
                   <div>
                     <input
                       required
-                      className="w-full py-2 px-4 rounded-full"
+                      className="w-full py-2 px-4 rounded-full max-sm:py-1"
                       type="text"
                       placeholder={t("common:consultation:placeholder:0")}
                       name="name"
@@ -148,7 +148,7 @@ function Consultation({ handleMessage, handleError, handleShow }) {
                   <div>
                     <input
                       required
-                      className="w-full py-2 px-4 rounded-full"
+                      className="w-full py-2 px-4 rounded-full max-sm:py-1"
                       type="email"
                       placeholder={t("common:consultation:placeholder:1")}
                       name="email"
@@ -159,7 +159,7 @@ function Consultation({ handleMessage, handleError, handleShow }) {
                   <div>
                     <input
                       required
-                      className="w-full py-2 px-4 rounded-full"
+                      className="w-full py-2 px-4 rounded-full max-sm:py-1"
                       type="tel"
                       pattern="^\+?\d+\d+$"
                       placeholder={t("common:consultation:placeholder:2")}
@@ -174,8 +174,8 @@ function Consultation({ handleMessage, handleError, handleShow }) {
                       required
                       className={
                         selectedValue !== ""
-                          ? "w-full py-2 px-4 rounded-full selected cursor-pointer"
-                          : "w-full py-2 px-4 rounded-full cursor-pointer"
+                          ? "w-full py-2 px-4 rounded-full selected cursor-pointer max-sm:py-1"
+                          : "w-full py-2 px-4 rounded-full cursor-pointer max-sm:py-1"
                       }
                       name="selectedValue"
                       value={selectedValue}
@@ -208,12 +208,12 @@ function Consultation({ handleMessage, handleError, handleShow }) {
                 </div>
 
                 <button
-                  className="flex items-center justify-center py-2 px-4 text-[18px] text-white font-bold rounded-full bg-[#FF5C2C] text-center"
+                  className="flex items-center justify-center py-2 px-4 text-[18px] text-white font-bold rounded-full bg-[#FF5C2C] text-center max-sm:text-[16px] max-sm:py-1"
                   type="submit"
                   disabled={isLoading}
                 >
                   {isLoading ? (
-                    <GoSync className="animate-spin text-[27px]" />
+                    <GoSync className="animate-spin text-[27px] max-sm:text-[24px]" />
                   ) : (
                     t("common:consultation:button")
                   )}

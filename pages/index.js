@@ -19,11 +19,11 @@ export default function Home() {
 
         <meta
           name="description"
-          content="Freewill Agency - US Travel Visa Service"
+          content="VP of Global Strategy and Business Development"
         />
         <meta
           property="og:title"
-          content="Freewill Agency - US Travel Visa Service"
+          content="VP of Global Strategy and Business Development"
         />
         <meta
           property="og:description"

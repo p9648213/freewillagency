@@ -2,9 +2,8 @@ import FooterMB from "./FooterMB";
 
 function Footer() {
   return (
-    <>
+    <div id="footer">
       <div
-        id="footer"
         className="h-[363px] bg-no-repeat max-sm:hidden"
         style={{
           backgroundImage: 'url("/assets/footer-img1.webp")',
@@ -119,7 +118,7 @@ function Footer() {
         </div>
       </div>
       <FooterMB />
-    </>
+    </div>
   );
 }
 

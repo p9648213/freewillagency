@@ -1,7 +1,6 @@
 function FooterMB() {
   return (
     <div
-      id="footer"
       className="h-[500px] bg-no-repeat sm:hidden"
       style={{
         backgroundImage: 'url("/assets/footer-img1.webp")',

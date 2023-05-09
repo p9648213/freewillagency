@@ -5,7 +5,7 @@ function Footer() {
     <>
       <div
         id="footer"
-        className="h-[363px] bg-no-repeat mt-2 max-sm:hidden"
+        className="h-[363px] bg-no-repeat max-sm:hidden"
         style={{
           backgroundImage: 'url("/assets/footer-img1.webp")',
           backgroundSize: "100%",

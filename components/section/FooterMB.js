@@ -32,8 +32,8 @@ function FooterMB() {
             <div className="flex flex-col justify-center items-center gap-10">
               <div className="flex flex-col justify-center items-center gap-6">
                 <div className="flex flex-col justify-center items-center gap-1 text-[11px] text-white">
-                  <div className="flex gap-2">
-                    <div className="w-[20px] h-[21px]">
+                  <div className="flex gap-1">
+                    <div className="w-[20px] h-[21px] translate-y-[-1px]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         xlink="http://www.w3.org/1999/xlink"
@@ -51,7 +51,7 @@ function FooterMB() {
                     </div>
                   </div>
 
-                  <div className="flex gap-2">
+                  <div className="flex gap-1">
                     <div className="w-[17.5px] h-[17.5px]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ function FooterMB() {
                     <div>Hotline: +84 797 033 888 / +84 798 046 888</div>
                   </div>
 
-                  <div className="flex gap-2">
+                  <div className="flex gap-1">
                     <div className="w-[17.5px] h-[17.5px]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ function FooterMB() {
                     <div>info@freewillagency.com</div>
                   </div>
 
-                  <div className="flex gap-2 ">
+                  <div className="flex gap-1">
                     <div className="w-[23.7px] h-[17.5px]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

@@ -49,7 +49,7 @@ function Container() {
         handleError={setIsError}
         handleShow={setShowModal}
       />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

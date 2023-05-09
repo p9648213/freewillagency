@@ -90,7 +90,7 @@ function Consultation({ handleMessage, handleError, handleShow }) {
   return (
     <div
       id="consultation"
-      className="h-[837px] bg-no-repeat bg-cover"
+      className="h-[837px] bg-no-repeat bg-cover max-sm:h-[800px]"
       style={{
         backgroundImage: 'url("/assets/consultion-img1.webp")',
         backgroundOrigin: "content-box",
@@ -115,7 +115,7 @@ function Consultation({ handleMessage, handleError, handleShow }) {
             {t("common:consultation:title")}
           </div>
           <div
-            className="w-[485px] h-[485px] rounded-full flex justify-center items-center max-sm:w-[345px] max-sm:h-[345px]"
+            className="w-[485px] h-[485px] rounded-full flex justify-center items-center max-sm:w-[340px] max-sm:h-[340px]"
             style={{
               background:
                 "linear-gradient(180deg, rgba(12, 108, 144, 1), rgba(1, 60, 82, 1))",

@@ -14,11 +14,11 @@ export default function PartnerImage({
   let movesHorizontal = moveHorizontal ? `${moveHorizontal}px` : "0px";
 
   return (
-    <div className="w-[247px] h-[98px] bg-white p-2 flex justify-center items-center overflow-hidden">
+    <div className="w-[247px] h-[98px] flex justify-center items-center">
       <Image
         width={688}
         height={110}
-        src={`/assets/${imageName}`}
+        src={`/assets/partner/${imageName}`}
         alt={`${alt}`}
         style={{
           scale: `${scalesWidth} ${scalesHeight}`,

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "../navmenu/Navbar";
+import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 
@@ -21,28 +22,18 @@ function Header({ handleScrolling }) {
   return (
     <div className="flex flex-row bg-white justify-center items-center max-sm:justify-start sm:h-[116px] max-sm:w-full">
       <div className="gap-28 h-full flex max-sm:block max-sm:w-full">
-        <div
-          className="w-[320px] translate-y-[-15px]
-          flex relative items-center justify-center max-sm:justify-start max-sm:translate-x-10 max-sm:w-full max-sm:h-[100px]"
-        >
-          <div className="w-[150px] cursor-pointer max-sm:w-[110px]">
-            <Image
-              src="/assets/logo.webp"
-              alt="logo"
-              className="w-full h-full"
-              width={0}
-              height={0}
-              sizes="100vw"
-            />
-          </div>
-          <div
-            className={`absolute text-center w-full top-[50%] left-[50%] translate-x-[-50%] text-[#0c6c90] font-[550] max-sm:w-fit max-sm:left-0 max-sm:translate-x-[-10%] max-sm:text-[10px] max-sm:top-[55%] ${
-              language === "en"
-                ? "text-[16px] translate-y-[140%]"
-                : "text-[14px] translate-y-[165%]"
-            }`}
-          >
-            {t("common:header:slogan")}
+        <div className="w-[350px] flex relative items-center justify-center max-sm:justify-start max-sm:w-full max-sm:h-[100px]">
+          <div className="w-full cursor-pointer max-sm:w-[170px]">
+            <Link href="https://www.freewillcapital.com/">
+              <Image
+                src="/assets/new-logo.png"
+                alt="logo"
+                className="w-full h-full"
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
+            </Link>
           </div>
         </div>
 

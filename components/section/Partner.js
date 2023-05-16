@@ -6,7 +6,7 @@ function Partner() {
   const { t } = useTranslation();
 
   return (
-    <div className="pt-7 pb-20 max-sm:pb-4">
+    <div className="pt-7 pb-10 max-sm:pb-4">
       <div className="flex flex-col justify-center items-center gap-12 max-sm:gap-9">
         <div className="text-[#073A91] text-[30px] font-bold text-center max-sm:text-[24px]">
           {t("common:partner:title")}

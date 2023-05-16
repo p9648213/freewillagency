@@ -53,26 +53,6 @@ function Banner({ handleScrolling }) {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {/* {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`h-[900px] bg-cover bg-no-repeat flex items-center justify-center absolute top-0 left-0 w-full transition-opacity duration-1000 ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
-          }`}
-          style={
-            !slide.details
-              ? {
-                  backgroundImage: `url("/assets/${slide.img}")`,
-                  opacity: `${index === currentSlide ? "1" : "0"}`,
-                }
-              : {
-                  backgroundImage: `linear-gradient(rgba(14, 114, 150, 0.5), rgba(14, 114, 150, 0.5)), url("/assets/${slide.img}")`,
-                  opacity: `${index === currentSlide ? "1" : "0"}`,
-                }
-          }
-        ></div>
-      ))} */}
-
         <div
           key={currentSlide}
           className={`flex justify-center items-center h-full ${

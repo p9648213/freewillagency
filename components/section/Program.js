@@ -12,10 +12,10 @@ function Program({ handleScrolling }) {
     <div id="program">
       <ProgHighlight handleScrolling={handleScrolling} />
       <ProgHighlightMB handleScrolling={handleScrolling} />
-      <ProjectHighlight handleScrolling={handleScrolling} />
+      {/* <ProjectHighlight handleScrolling={handleScrolling} />
       <ProjectHighlightMB handleScrolling={handleScrolling} />
       <ProjectImgs />
-      <ProjectImgsMB />
+      <ProjectImgsMB /> */}
       <ProgDetails handleScrolling={handleScrolling} />
       <ProgDetailsMB handleScrolling={handleScrolling} />
     </div>

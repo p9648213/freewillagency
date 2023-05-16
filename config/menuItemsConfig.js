@@ -45,6 +45,20 @@ export const menuItemsConfigEN = [
           },
           {
             title: "Chương trình EB5",
+            submenu: [
+              {
+                title: "Picth Deck FreeWill.PDF",
+                file: "pdf1.pdf",
+              },
+              {
+                title: "Picth Deck BioTech.PDF",
+                file: "pdf2.pdf",
+              },
+              {
+                title: "Picth Deck Hayyat.PDF",
+                file: "pdf3.pdf",
+              },
+            ],
           },
           {
             title: "Chương trình L1",

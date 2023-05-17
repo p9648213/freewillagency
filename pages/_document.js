@@ -10,6 +10,14 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Niramit:wght@300;400;500&display=swap"
           rel="stylesheet"
         ></link>
+        <meta
+          http-equiv="Permissions-Policy"
+          content="ambient-light-sensor=()"
+        ></meta>
+        <meta
+          http-equiv="Permissions-Policy"
+          content="idle-detection=()"
+        ></meta>
       </Head>
       <body>
         <Main />

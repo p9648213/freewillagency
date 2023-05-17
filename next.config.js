@@ -5,19 +5,4 @@ const nextConfig = {
   i18n,
 };
 
-module.exports = {
-  ...nextConfig,
-  async headers() {
-    return [
-      {
-        source: "/",
-        headers: [
-          {
-            key: "Permissions-Policy",
-            value: "ambient-light-sensor=(),idle-detection=()",
-          },
-        ],
-      },
-    ];
-  },
-};
+module.exports = nextConfig;

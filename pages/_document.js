@@ -12,12 +12,8 @@ export default function Document() {
         ></link>
         <meta
           http-equiv="Permissions-Policy"
-          content="ambient-light-sensor=()"
-        ></meta>
-        <meta
-          http-equiv="Permissions-Policy"
-          content="idle-detection=()"
-        ></meta>
+          content="accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+        />
       </Head>
       <body>
         <Main />
